@@ -1287,7 +1287,6 @@ dependencies = [
  "bv",
  "bytemuck",
  "cc",
- "console_error_panic_hook",
  "curve25519-dalek",
  "getrandom 0.2.15",
  "itertools",

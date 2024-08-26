@@ -8,12 +8,12 @@ edition = "2021"
 # solana-program = "=2.0.3"
 solana-program = { path = "/home/rigidus/src/solana/sdk/program", default-features = false }
 console_error_panic_hook = { path = "/home/rigidus/src/console_error_panic_hook" }
-getrandom = { path = "/home/rigidus/src/getrandom", features = ["js"] }
+# getrandom = { path = "/home/rigidus/src/getrandom", features = ["js"] }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 solana-program = { path = "/home/rigidus/src/solana/sdk/program" }
 console_error_panic_hook = { path = "/home/rigidus/src/console_error_panic_hook" }
-getrandom = { path = "/home/rigidus/src/getrandom", features = ["js"] }
+getrandom = { path = "/home/rigidus/src/getrandom", features = [] }
 # wasm-bindgen = { optional = true, default-features = false }
 # js-sys = { optional = true, default-features = false }
 # web-sys = { optional = true, default-features = false }
